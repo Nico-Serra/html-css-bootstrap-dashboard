@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,51 +9,192 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid justify-content-start">
-          <a class="navbar-brand" href="#">
-            <img src="./assets/img/mobile-logo.png" alt="Boolean" width="30px" class="d-lg-none">
-            <img src="./assets/img/logo.svg" alt="" class="d-none d-lg-block">
-          </a>
-          <span class="navbar-text border rounded p-2 bg-body-tertiary flex-grow-1">
-            <i class="fa-solid fa-magnifying-glass"></i> Prova a cercare: Lezioni di Laravel
-          </span>
-          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span><i class="fa-solid fa-bell text-warning"></i></span>
-          </button>
-          <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-bars"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-bell text-warning"></i>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/mobile-logo.png" alt="Boolean" width="30px" class="d-lg-none">
+                <img src="./assets/img/logo.svg" alt="" class="d-none d-lg-block">
+            </a>
+            <span class="navbar-text border rounded p-2 bg-body-tertiary flex-grow-1">
+                <i class="fa-solid fa-magnifying-glass"></i> Prova a cercare: Lezioni di Laravel
+            </span>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-bell text-warning"></i></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-bars"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-bell text-warning"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
                 </ul>
-              </li>
-            </ul>
-          </div>
+            </div>
         </div>
-      </nav>
+    </nav>
 
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+        aria-controls="offcanvasScrolling"><i class="fa-solid fa-plus"></i></button>
 
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Inserisci un nuovo studente</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputname" class="form-label">Nome</label>
+                    <input type="name" class="form-control" id="inputsurname">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputsurname" class="form-label">Cognome</label>
+                    <input type="surname" class="form-control" id="inputsurname">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <label class="visually-hidden" for="autoSizingInputGroup"></label>
+                    <div class="input-group">
+                        <div class="input-group-text">@</div>
+                        <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Indirizzo</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Città</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Stato</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Cap</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                    <label for="formFile" class="form-label">Foto</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Seleziona per proseguire
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Salva</button>
+                    <button type="submit" class="btn btn-warning">Svuota</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
 
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputname" class="form-label">Nome</label>
+                <input type="name" class="form-control" id="inputsurname">
+            </div>
+            <div class="col-md-6">
+                <label for="inputsurname" class="form-label">Cognome</label>
+                <input type="surname" class="form-control" id="inputsurname">
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <label class="visually-hidden" for="autoSizingInputGroup"></label>
+                <div class="input-group">
+                    <div class="input-group-text">@</div>
+                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Indirizzo</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">Città</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">Stato</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Cap</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+                <label for="formFile" class="form-label">Foto</label>
+                <input class="form-control" type="file" id="formFile">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Seleziona per proseguire
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Salva</button>
+                <button type="submit" class="btn btn-warning">Svuota</button>
+            </div>
+        </form>
+      </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -5,6 +5,7 @@
 body{
     height: 100vh;
     overflow: hidden;
+    font-family: "Roboto", sans-serif;
 }
 
 .debug {
@@ -60,6 +61,7 @@ body{
 
         .banner{
             height: 125px;
+            background-color: rgba(27, 114, 232, 1);
         }
 
 
