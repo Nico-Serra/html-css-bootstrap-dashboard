@@ -60,8 +60,12 @@ body{
         height: 100%;
 
         .banner{
-            height: 125px;
+            height: 250px;
             background-color: rgba(27, 114, 232, 1);
+
+            @media screen and (min-width: 768px) {
+            height: 125px;
+            }
         }
 
 
@@ -72,8 +76,12 @@ body{
 
 /* #region Utilities */
 
-.hidden{
-    display: none;
+.btn_badge{
+    background-color: rgba(22, 91, 186, 1);
+    color: white;
+    display: flex;
+    align-items: center;
+    
 }
 
 /* #endregion Utilities */
