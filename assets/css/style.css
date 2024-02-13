@@ -1,6 +1,6 @@
-.debug *{
+/* .debug *{
     border: 1px dashed black;
-}
+} */
 
 body{
     height: 100vh;
@@ -35,6 +35,10 @@ body{
     }
 }
 
+#site_header{
+    background-color: rgba(248, 249, 250, 1);
+}
+
 .wrapper{
 
     .sidebar{
@@ -59,3 +63,11 @@ body{
     }
 
 }
+
+/* #region Utilities */
+
+.hidden{
+    display: none;
+}
+
+/* #endregion Utilities */
