@@ -1,0 +1,61 @@
+.debug *{
+    border: 1px dashed black;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.debug {
+    & #site_header{
+        height: 70px;
+        background-color: palegoldenrod;
+    }
+
+    & .wrapper{
+        background-color: aqua;
+        height: calc(100% - 70px);
+
+        .sidebar{
+            background-color: red;
+        }
+
+        #site_main{
+            background-color: beige;
+
+            .banner{
+                background-color: blue;
+            }
+
+            & [class^="col-"]{
+                height: 750px;
+            }
+        }
+    }
+}
+
+.wrapper{
+
+    .sidebar{
+        width: 70px;
+        height: 100%;
+
+        @media screen and (min-width: 1200px) {
+            width: 150px;
+        }
+    }
+
+    #site_main{
+        flex-grow: 1;
+        height: 100%;
+
+        .banner{
+            height: 125px;
+        }
+
+        
+
+    }
+
+}
