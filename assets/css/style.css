@@ -58,6 +58,8 @@ body {
     #site_main {
         flex-grow: 1;
         height: 100%;
+        overflow: hidden;
+        overflow-y: auto;
 
         .banner {
             height: 250px;
