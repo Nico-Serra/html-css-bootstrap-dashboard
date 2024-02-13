@@ -1,50 +1,50 @@
-.debug *{
+.debug * {
     border: 1px dashed black;
 }
 
-body{
+body {
     height: 100vh;
     overflow: hidden;
     font-family: "Roboto", sans-serif;
 }
 
 .debug {
-    & #site_header{
+    & #site_header {
         height: 70px;
         background-color: palegoldenrod;
     }
 
-    & .wrapper{
+    & .wrapper {
         background-color: aqua;
         height: calc(100% - 70px);
 
-        .sidebar{
+        .sidebar {
             /* background-color: red; */
         }
 
-        #site_main{
+        #site_main {
             background-color: beige;
 
-            .banner{
+            .banner {
                 background-color: blue;
             }
 
-            & [class^="col-"]{
+            & [class^="col-"] {
                 height: 750px;
             }
         }
     }
 }
 
-#site_header{
+#site_header {
     background-color: rgba(248, 249, 250, 1);
 }
 
-.wrapper{
+.wrapper {
 
     height: calc(100% - 58px);
 
-    .sidebar{
+    .sidebar {
         width: 70px;
         height: 100%;
         background-color: rgba(5, 30, 52, 1);
@@ -55,20 +55,32 @@ body{
         }
     }
 
-    #site_main{
+    #site_main {
         flex-grow: 1;
         height: 100%;
 
-        .banner{
+        .banner {
             height: 250px;
             background-color: rgba(27, 114, 232, 1);
 
             @media screen and (min-width: 768px) {
-            height: 125px;
+                height: 125px;
+
+                .new {
+                    flex-grow: 1;
+                    order: 1;
+                }
+
+                .boolean {
+                    flex-grow: 2;
+                    order: -1;
+                }
+
+                .boolean_bottom {
+                    flex-grow: 1;
+                }
             }
         }
-
-
 
     }
 
@@ -76,12 +88,16 @@ body{
 
 /* #region Utilities */
 
-.btn_badge{
+.btn_badge {
     background-color: rgba(22, 91, 186, 1);
     color: white;
     display: flex;
     align-items: center;
-    
+    font-size: 0.8rem;
+    padding: 0.2rem;
+    border-radius: 0.8rem;
+
 }
 
 /* #endregion Utilities */
+
