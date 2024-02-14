@@ -67,6 +67,9 @@ body {
 
             @media screen and (min-width: 768px) {
                 height: 125px;
+                
+                }
+
 
                 .new {
                     flex-grow: 1;
@@ -100,6 +103,9 @@ body {
     border-radius: 0.8rem;
 
 }
+
+
+
 
 /* #endregion Utilities */
 
